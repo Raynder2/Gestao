@@ -16,7 +16,7 @@
  *   IE11; I only caught this as our luna1 UI tests didn't like the provided
  *   code.
  *
- * In each case, changes are between // ASANA BEGIN and // ASANA END markers.
+ * In each case, changes are between // gestao BEGIN and // gestao END markers.
  * Commented out code is library code, and all other code was added.
  */
 
@@ -34,7 +34,7 @@ var __extends =
     e.prototype = new i();
   };
 !(function(e) {
-// ASANA BEGIN
+// gestao BEGIN
 //   if ("object" == typeof exports && "undefined" != typeof module)
 //     module.exports = e();
 //   else if ("function" == typeof define && define.amd) define([], e);
@@ -48,7 +48,7 @@ var __extends =
       : this
     ).OneDrive = e();
 //   }
-// ASANA END
+// gestao END
 })(function() {
   return (function o(a, s, u) {
     function l(t, e) {
@@ -2217,10 +2217,10 @@ var __extends =
                 this.receiver = e;
               }
               e.prototype.send = function(e, t) {
-                // ASANA BEGIN
-                // #PostMessageTargetOrigin: https://app.asana.com/0/261095544/1141492114787322
-                this.receiver && this.receiver.postMessage(e, "https://app.asana.com");
-                // ASANA END
+                // gestao BEGIN
+                // #PostMessageTargetOrigin: https://app.gestao.com/0/261095544/1141492114787322
+                this.receiver && this.receiver.postMessage(e, "https://app.gestao.com");
+                // gestao END
               };
               e.prototype.getReceiver = function() {
                 return this.receiver;
@@ -3391,9 +3391,9 @@ var __extends =
                 );
               };
               function L(e) {
-                // ASANA BEGIN
+                // gestao BEGIN
                 this[g] = D++;
-                // ASANA END
+                // gestao END
                 this._result = this._state = void 0;
                 this._subscribers = [];
                 if (y !== e) {
